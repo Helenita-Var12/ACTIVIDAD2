@@ -1,0 +1,88 @@
+numero_aleatorio = random.randint(1, 100)
+numero_usuario = 0
+
+while numero_usuario != numero_aleatorio:
+    numero_usuario = int(input("Introduce un número entre 1 y 100: "))
+
+    if numero_usuario > numero_aleatorio:
+        print("El número es menor.")
+    elif numero_usuario < numero_aleatorio:
+        print("El número es mayor.")
+
+print("¡Felicidades! Has adivinado el número.")
+
+// Ejercicio 2
+suma = 0
+numero = 1
+
+while numero <= 100:
+    if numero % 2 == 0:
+        suma += numero
+
+    numero += 1
+
+print("La suma de los números pares del 1 al 100 es:", suma)
+
+// Ejercicio 3
+suma = 0
+numero = 1
+
+while numero <= 100:
+    if numero % 2 == 0:
+        suma += numero
+
+    numero += 1
+
+print("La suma de los números pares del 1 al 100 es:", suma)
+
+//Ejercicio 4
+
+cadena = input("Introduce una cadena de texto: ")
+vocales = 0
+
+for caracter in cadena:
+    if caracter in "aeiou":
+        vocales += 1
+
+print("El número de vocales en la cadena es:", vocales)
+
+// Ejecicio 5
+numero = 1
+
+while numero <= 50:
+    if numero % 2 != 0:
+        print(numero)
+
+    numero += 1
+// Ejercicio 6
+
+for numero in range(2, 101, 2):
+    print(numero)
+
+// Ejercicio 7
+suma = 0
+for numero in range(1, 11):
+    suma += numero**2
+
+print("La suma de los cuadrados de los números del 1 al 10 es:", suma)
+
+//Ejercicio 8
+numero = int(input("Introduce un número: "))
+
+for i in range(1, 11):
+    print(f"{numero} x {i} = {numero * i}")
+
+
+// ejercicio 9
+
+numero = int(input("Introduce un número: "))
+factorial = 1
+
+for i in range(1, numero + 1):
+    factorial *= i
+
+print("El factorial de", numero, "es:", factorial)
+
+
+
+
